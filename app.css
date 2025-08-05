@@ -1,3 +1,5 @@
-h1 {
-    font-style: bold;
+.header {
+    text-align: center;
+    font-weight: bold;
+    color: blue;
 }
