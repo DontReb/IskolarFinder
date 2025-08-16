@@ -1,7 +1,7 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 
-function homeNoAccount() {
+function HomeNoAccount() {
     return (
         <div className="homeNoAccount">
             <h1>Find Scholarships That Fit You Best</h1>
@@ -16,4 +16,4 @@ function homeNoAccount() {
     );
 }
 
-export default homeNoAccount;
+export default HomeNoAccount;
