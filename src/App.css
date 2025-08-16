@@ -5,12 +5,66 @@ body {
 
 h1 {
   color: #284B63;
-  text-align: center;
+  display: flex;
+  margin-left: 50px;
+}
+
+.dash {
+  justify-content: space-between;
+  display: flex;
+}
+
+.navButtons {
+  align-items: center;
+  padding: 12px;
+}
+
+.navButtons ul {
+  display: flex;
+  gap: 50px;
+}
+
+.dash li {
+  list-style-type: none;
+  cursor: pointer;
 }
 
 .home {
   color: #284B63;
   text-align: center;
+}
+
+.authButtons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-right: 50px;
+}
+
+.signUp {
+  background: #153243;
+  border: none;
+  border-radius: 25px;
+  padding: 12px;
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+  color: white;
+  font-family: "Sora";
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 0.2s ease;
+}
+
+.big {
+  font-size: 50px;
+  color: #284B63;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 
 .homeNoAccount {
