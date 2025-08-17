@@ -9,6 +9,12 @@ h1 {
   margin-left: 50px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
 .dash {
   justify-content: space-between;
   display: flex;
