@@ -1,0 +1,75 @@
+.login {
+  width: 25%;
+  height: 100vh;
+  background-color: #153243;
+  margin: 0%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginH1 {
+  color: white;
+  display: flex;
+  margin: 0;
+  text-align: center;
+  padding-top: 10%;
+  font-size: 25px;
+}
+
+.bigLogin {
+    font-size: 33px;
+    font-weight: 700;
+    margin-top: 90px;
+    margin-bottom: 80px;
+    color: white
+}
+
+.loginForm {
+    font-family: "Sora";
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+.loginForm label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.loginForm input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border-bottom: 1px solid grey;
+}
+
+.loginButton {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-top: 10px;
+    background-color: #EEF0EB;
+    color: #153243;
+    cursor: pointer;
+    font-family: "Sora";
+    width: 65%;
+    border-radius: 10px;
+}
+
+.passwordInput {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-color: transparent;
+    border-bottom: 1px solid grey;
+}
+
+.forgotPassword {
+    margin-top: 0;
+}

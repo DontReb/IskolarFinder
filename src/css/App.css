@@ -9,22 +9,3 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
-.login {
-  width: 25%;
-  height: 100vh;
-  background-color: #153243;
-  margin: 0%;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.loginH1 {
-  color: white;
-  display: flex;
-  margin: 0;
-  text-align: center;
-}
-
-
