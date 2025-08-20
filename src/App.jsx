@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import HomeNoAccount from "./components/homeNoAccount";
@@ -8,16 +8,28 @@ import "./App.css";
 
 
 function App() {
+  const location = useLocation();
+
+  const hideNavbarRoutes = ["/login", "/signup"];
+
   return (
-    <Router>
-      <Navbar />
+    <>
+      {!hideNavbarRoutes.includes(location.pathname) && <Navbar />}
       <Routes>
         <Route path="/" element={<HomeNoAccount />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes>
+    </>
+  );
+}
+
+function AppWrapper(){
+  return (
+    <Router>
+      <App />
     </Router>
   );
 }
 
-export default App;
+export default AppWrapper;

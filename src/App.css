@@ -1,11 +1,12 @@
 body {
   background-color: #EEF0EB;
   font-family: "Sora";
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
+.Home {
   color: #284B63;
-  display: flex;
   margin-left: 50px;
 }
 
@@ -40,6 +41,14 @@ a {
   text-align: center;
 }
 
+.big {
+  font-size: 50px;
+  color: #284B63;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-align: center;
+}
+
 .authButtons {
   display: flex;
   align-items: center;
@@ -66,12 +75,7 @@ a {
   transition: transform 0.2s ease;
 }
 
-.big {
-  font-size: 50px;
-  color: #284B63;
-  font-weight: bold;
-  margin-bottom: 0;
-}
+
 
 .homeNoAccount {
   display: flex;
@@ -79,6 +83,23 @@ a {
   align-items: center;   
   min-height: 100vh;      
   padding-top: 10%;
+}
+
+.login {
+  width: 25%;
+  height: 100vh;
+  background-color: #153243;
+  margin: 0%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginH1 {
+  color: white;
+  display: flex;
+  margin: 0;
+  text-align: center;
 }
 
 

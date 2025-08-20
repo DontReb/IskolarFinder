@@ -2,8 +2,8 @@ import React from "react";
 
 function Login() {
     return (
-        <div className="page">
-            <h1>Login Page</h1>
+        <div className="login">
+            <h1 className="loginH1">IskolarFinder</h1>
             <p>Placeholder.</p>
         </div>
     );
