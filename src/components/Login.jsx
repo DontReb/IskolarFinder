@@ -11,7 +11,9 @@ function Login() {
                 <label>Password</label>
                 <input className="passwordInput" type="password" placeholder="Password" />
             </div>
-            <p className="forgotPassword">Forgot Password?</p>
+            <div className="forgotPasswordContainer">
+                <p className="forgotPassword">Forgot Password?</p>
+            </div>
             <button className="loginButton" type="submit">Login</button>
         </div>
     );

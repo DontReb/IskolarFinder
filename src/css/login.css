@@ -70,6 +70,18 @@
     border-bottom: 1px solid grey;
 }
 
+.forgotPasswordContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    width: 80%;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
 .forgotPassword {
     margin-top: 0;
+    color: white;
+    font-size: 13px;
 }
