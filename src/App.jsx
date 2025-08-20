@@ -5,7 +5,8 @@ import SignUp from "./components/SignUp";
 import HomeNoAccount from "./components/homeNoAccount";
 import Navbar from "./components/Navbar";
 import "./css/App.css";
-
+import "./css/NavBar.css";
+import "./css/Home.css";
 
 function App() {
   const location = useLocation();

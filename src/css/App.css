@@ -5,84 +5,9 @@ body {
   padding: 0;
 }
 
-.Home {
-  color: #284B63;
-  margin-left: 50px;
-}
-
 a {
   text-decoration: none;
   color: inherit;
-}
-
-
-.dash {
-  justify-content: space-between;
-  display: flex;
-}
-
-.navButtons {
-  align-items: center;
-  padding: 12px;
-}
-
-.navButtons ul {
-  display: flex;
-  gap: 50px;
-}
-
-.dash li {
-  list-style-type: none;
-  cursor: pointer;
-}
-
-.home {
-  color: #284B63;
-  text-align: center;
-}
-
-.big {
-  font-size: 50px;
-  color: #284B63;
-  font-weight: bold;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.authButtons {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-right: 50px;
-}
-
-.signUp {
-  background: #153243;
-  border: none;
-  border-radius: 25px;
-  padding: 12px;
-  width: 100px;
-  height: 30px;
-  margin: 10px;
-  color: white;
-  font-family: "Sora";
-  font-size: 15px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  transition: transform 0.2s ease;
-}
-
-
-
-.homeNoAccount {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;   
-  min-height: 100vh;      
-  padding-top: 10%;
 }
 
 .login {
@@ -102,23 +27,4 @@ a {
   text-align: center;
 }
 
-
-.btn {
-  background: #153243;
-  border: none;
-  border-radius: 20px;
-  padding: 12px 24px;
-  width: 200px;
-  margin: 10px 50px;
-  color: white;
-  font-weight: bold;
-  font-family: "Sora";
-  font-size: 18px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  transition: transform 0.2s ease;
-}
 
