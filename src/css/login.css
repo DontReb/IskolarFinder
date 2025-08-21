@@ -1,11 +1,42 @@
+.loginPage {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
 .login {
   width: 30%;
   height: 100vh;
   background-color: #153243;
-  margin: 0%;
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.rightContent {
+    width: 70%;
+    height: 100%;
+    background-color: #EEF0EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    color: #153243;
+    font-family: "Sora";
+    text-align: center;
+}
+
+.rightContent h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.rightContent p {
+    font-size: 18px;
+    line-height: 1.5;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .loginH1 {
@@ -107,3 +138,4 @@
     color: #EEF0EB;
     font-size: 15px;
 }
+
