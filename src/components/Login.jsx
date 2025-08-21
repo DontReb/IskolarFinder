@@ -4,7 +4,7 @@ function Login() {
     return (
         <div className="page">
             <h1>Login Page</h1>
-            <p>Placeholder.</p>
+            <p>LOGIN.</p>
         </div>
     );
 }
