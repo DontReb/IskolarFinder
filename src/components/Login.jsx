@@ -15,6 +15,8 @@ function Login() {
                 <p className="forgotPassword">Forgot Password?</p>
             </div>
             <button className="loginButton" type="submit">Login</button>
+            <p className="or">or</p>
+            <button className="SignUpButton">Sign Up</button>
         </div>
     );
 }
