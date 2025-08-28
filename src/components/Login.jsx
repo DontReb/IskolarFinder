@@ -1,8 +1,7 @@
-import React from "react";
+import React, { memo } from "react";
 
-function Login() {
+const Login = memo(function Login() {
     return (
-        <body>
             <div className="loginPage">
                 <div className="login">
                     <h1 className="loginH1">IskolarFinder</h1>
@@ -25,8 +24,7 @@ function Login() {
                     <p>Start stepping toward your future with your desired scholarship. We seek opportunities for you— just one click away.</p>
                 </div>
             </div>
-        </body>
     );
-}
+});
 
 export default Login;
