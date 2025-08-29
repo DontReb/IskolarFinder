@@ -1,6 +1,9 @@
 import React, { memo } from "react";
+// import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Login = memo(function Login() {
+
     return (
             <div className="loginPage">
                 <div className="login">
@@ -15,9 +18,9 @@ const Login = memo(function Login() {
                     <div className="forgotPasswordContainer">
                         <p className="forgotPassword">Forgot Password?</p>
                     </div>
-                    <button className="loginButton" type="submit">Login</button>
+                    <Link to="/home" className="loginButton" type="submit">Login</Link>
                     <p className="or">or</p>
-                    <button className="SignUpButton">Sign Up</button>
+                    <Link to="/signup" className="SignUpButton">Sign Up</Link>
                 </div>
                 <div className="rightContent">
                     <h1>IskolarFinder</h1>
