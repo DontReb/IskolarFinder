@@ -2,17 +2,21 @@ import React, { memo } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from 'axios';
+import { useNavigate } from "react-router-dom";
 
 const SignUp = memo(function Login() {
 
     const [name, setName] = useState();
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('', {name, email, password})
-        .then(result => console.log(result))
+        axios.post('http://localhost:3001/signup', {name, email, password})
+        .then(result => {console.log(result)
+            navigate('/login');
+        })
         .catch(err => console.log(err));
     }
 
@@ -24,7 +28,7 @@ const SignUp = memo(function Login() {
                         <label>Full Name</label>
                         <input type="text" placeholder="Name" onChange={(e) => setName(e.target.value)} />
                         <label>Email</label>
-                        <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
+                        <input type="text" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
                         <label>Password</label>
                         <input className="passwordInput" type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
                         <label>Confirm Password</label>
