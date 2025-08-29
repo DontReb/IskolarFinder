@@ -8,6 +8,7 @@ import "./css/App.css";
 import "./css/NavBar.css";
 import "./css/Home.css";
 import "./css/login.css";
+import "./css/signUp.css"
 
 function App() {
   const location = useLocation();
