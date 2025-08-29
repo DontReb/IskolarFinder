@@ -1,0 +1,11 @@
+body {
+  background-color: #EEF0EB;
+  font-family: "Sora";
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
