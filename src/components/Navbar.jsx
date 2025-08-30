@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -16,7 +15,7 @@ function Navbar() {
             <div className="authButtons">
                 <Link to="/login" className="loginLink">Login</Link>
                 <Link to="/signup">
-                    <button className="signUp">Sign Up</button>
+                    <button className="signUp-btn">Sign Up</button>
                 </Link>
             </div>
         </nav>

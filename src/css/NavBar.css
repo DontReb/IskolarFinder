@@ -1,6 +1,29 @@
+.signUp-btn {
+  background: var(--background);
+  border: none;
+  border-radius: 25px;
+  height: 30px;
+  color: var(--main-white);
+  font-family: var(--font-sans);
+  cursor: pointer;
+}
+
+.loginLink {
+  color: var(--primary-color);
+}
+
+.signUp-btn,
+.loginLink {
+  font-size: 15px;
+  padding: 0 2rem;
+  font-weight: 600;
+}
+
 .dash {
   justify-content: space-between;
   display: flex;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .dash li {
@@ -9,8 +32,8 @@
 }
 
 .Home {
-  color: #284B63;
-  margin-left: 50px;
+  color: var(--primary-color);
+  font-weight: 800;
 }
 
 .navButtons {
@@ -26,25 +49,4 @@
 .authButtons {
   display: flex;
   align-items: center;
-  gap: 15px;
-  margin-right: 50px;
-}
-
-.signUp {
-  background: #153243;
-  border: none;
-  border-radius: 25px;
-  padding: 12px;
-  width: 100px;
-  height: 30px;
-  margin: 10px;
-  color: white;
-  font-family: "Sora";
-  font-size: 15px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  transition: transform 0.2s ease;
 }

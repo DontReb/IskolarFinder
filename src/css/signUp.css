@@ -5,49 +5,22 @@
 }
 
 .signUp {
-  width: 30%;
-  height: 100vh;
-  background-color: #153243;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  border-radius: 0;
-  margin: 0;
-}
-
-.rightContent {
-    width: 70%;
-    height: 100%;
-    background-color: #EEF0EB;
+    width: 30%;
+    height: 100vh;
+    background-color: var(--background);
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    align-items: center;
-    color: #153243;
-    font-family: "Sora";
-    text-align: center;
-}
-
-.rightContent h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.rightContent p {
-    font-size: 18px;
-    line-height: 1.5;
-    padding-left: 15%;
-    padding-right: 15%;
+    border-radius: 0;
 }
 
 .bigSignUp {
     font-size: 33px;
     font-weight: 700;
-    margin-top: 0;
+    margin-top: 3rem;
     padding-top: 0;
     margin-bottom: 60px;
-    color: #EEF0EB;
+    color: var(--main-white);
 }
 
 .signupdiv {
@@ -57,7 +30,6 @@
 }
 
 .SignUpForm {
-    font-family: "Sora";
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -65,7 +37,7 @@
 }
 
 .SignUpForm label {
-    color: #EEF0EB;
+    color: var(--main-white);
     margin-bottom: 5px;
 }
 
@@ -76,7 +48,7 @@
     margin-bottom: 15px;
     background-color: transparent;
     border-bottom: 1px solid grey;
-    color: #EEF0EB;
+    color: var(--main-white);
 }
 
 .Signupbtn {
@@ -84,7 +56,7 @@
     font-size: 16px;
     border: none;
     margin-top: 10px;
-    background-color: #EEF0EB;
+    background-color: var(--main-white);
     color: #153243;
     cursor: pointer;
     font-family: "Sora";
@@ -111,23 +83,30 @@
     font-size: 13px;
 }
 
-.SignUpButton {
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    margin-top: 5px;
-    background-color: #284B63;
-    color: #EEF0EB;
-    cursor: pointer;
-    font-family: "Sora";
-    width: 65%;
-    border-radius: 10px;
-    font-weight: bold;
-    text-align: center;
-}
-
 .or {
-    color: #EEF0EB;
+    color: var(--main-white);
     font-size: 15px;
 }
 
+.signUp-icon-btn {
+    display: flex;
+    gap: 4rem;
+    color: var(--main-white);
+}
+
+.signUp-icon-btn svg {
+    background-color: var(--primary-color);
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 6px 12px var(--darkest-blue);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.signUp-icon-btn svg:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px var(--darkest-blue);
+}

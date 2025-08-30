@@ -5,25 +5,25 @@
 }
 
 .login {
-  width: 30%;
-  height: 100vh;
-  background-color: #153243;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+    width: 30%;
+    height: 100vh;
+    background-color: #153243;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .rightContent {
     width: 70%;
     height: 100%;
-    background-color: #EEF0EB;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: auto;
     align-items: center;
-    color: #153243;
-    font-family: "Sora";
+    color: var(--primary-color);
+    font-family: var(--font-sans);
     text-align: center;
 }
 
@@ -40,12 +40,12 @@
 }
 
 .loginH1 {
-  color: #EEF0EB;
-  display: flex;
-  margin: 0;
-  text-align: center;
-  padding-top: 10%;
-  font-size: 25px;
+    color: var(--main-white);
+    display: flex;
+    margin: 0;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 25px;
 }
 
 .bigLogin {
@@ -53,11 +53,11 @@
     font-weight: 700;
     margin-top: 90px;
     margin-bottom: 80px;
-    color: #EEF0EB;
+    color: var(--main-white);
 }
 
 .loginForm {
-    font-family: "Sora";
+    font-family: var(--font-sans);
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -65,7 +65,7 @@
 }
 
 .loginForm label {
-    color: #EEF0EB;
+    color: var(--main-white);
     margin-bottom: 5px;
 }
 
@@ -76,7 +76,7 @@
     margin-bottom: 15px;
     background-color: transparent;
     border-bottom: 1px solid grey;
-    color: #EEF0EB;
+    color: var(--main-white);
 }
 
 .loginDiv {
@@ -85,19 +85,32 @@
     align-items: center;
 }
 
-.loginButton {
-    padding: 10px;
+.primaryBtn,
+.secondaryBtn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: var(--font-sans);
+    width: 320px;
     font-size: 16px;
+    border-radius: var(--border-radius);
+    font-weight: 700;
+    box-shadow: 0 6px 12px var(--darkest-blue);
+}
+
+.primaryBtn {
     border: none;
     margin-top: 10px;
-    background-color: #EEF0EB;
-    color: #153243;
+    background-color: var(--main-white);
+    color: var(--background);
     cursor: pointer;
-    font-family: "Sora";
-    width: 320px;
-    border-radius: 10px;
-    margin-bottom: 5px;
-    font-weight: bold;
+    text-align: center;
+}
+
+.secondaryBtn {
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--main-white);
+    cursor: pointer;
     text-align: center;
 }
 
@@ -123,27 +136,12 @@
 
 .forgotPassword {
     margin-top: 0;
-    color: #EEF0EB;
+    color: var(--main-white);
     font-size: 13px;
 }
 
-.SignUpButton {
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    margin-top: 5px;
-    background-color: #284B63;
-    color: #EEF0EB;
-    cursor: pointer;
-    font-family: "Sora";
-    width: 65%;
-    border-radius: 10px;
-    font-weight: bold;
-    text-align: center;
-}
 
 .or {
-    color: #EEF0EB;
+    color: var(--main-white);
     font-size: 15px;
 }
-
