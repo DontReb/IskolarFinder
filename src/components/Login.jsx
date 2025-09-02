@@ -27,8 +27,8 @@ function Login() {
                     <h1 className="loginH1">IskolarFinder</h1>
                     <p className="bigLogin">LOGIN</p>
                     <form className="loginForm" onSubmit={handleSubmit}>
-                        <label>Username</label>
-                        <input type="text" placeholder="Username" onChange={(e) => setEmail(e.target.value)} />
+                        <label>Email</label>
+                        <input type="text" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
                         <label>Password</label>
                         <input className="passwordInput" type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
                         <div className="forgotPasswordContainer">
