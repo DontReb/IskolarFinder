@@ -1,6 +1,7 @@
 .dash {
   justify-content: space-between;
   display: flex;
+  padding: 0 20px;
 }
 
 .dash li {
@@ -23,28 +24,42 @@
   gap: 50px;
 }
 
-.authButtons {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+.authLinks {
+  gap: 10px;
+  margin-top: 24px;
   margin-right: 50px;
 }
 
-.signUp {
-  background: #153243;
+.loginbtn {
   border: none;
-  border-radius: 25px;
-  padding: 12px;
-  width: 100px;
-  height: 30px;
-  margin: 10px;
-  color: white;
+  padding: 10px;
   font-family: "Sora";
+  font-weight: 450;
   font-size: 15px;
+  color: #284B63;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  transition: transform 0.2s ease;
+  transition: all 0.3s ease;
+}
+
+.loginbtn:hover {
+  background-color: #d6d8d3;
+  border-radius: 20px;
+  padding: 7px 10px;
+}
+
+.signUpbtn {
+  border: none;
+  border-radius: 20px;
+  background-color: #153243;
+  padding: 7px 25px;
+  margin-left: 20px;
+  font-family: "Sora";
+  font-weight: 450;
+  font-size: 15px;
+  color: #EEF0EB;
+  transition: all 0.3s ease;
+}
+
+.signUpbtn:hover {
+  background-color: #1c4359;
 }
