@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
+import { auth } from "../firebase";
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 const api = axios.create({
     baseURL: import.meta.env.VITE_API_URL || 'http://localhost:3001',
@@ -24,19 +26,19 @@ export default function Login() {
         setError("");
 
         try {
-            const { data, status } = await api.post("/login", form);
-            if ((data && data.success) || status === 200) {
-                navigate("/home");
-            } else {
-                setError(data?.message || "Login failed");
-            }
+          const userCredential = await signInWithEmailAndPassword(auth, form.email, form.password);
+
+          const token = await userCredential.user.getIdToken();
+
+          await api.get("/profile", {
+            headers: { Authorization: `Bearer ${token}` }
+          });
+
+          navigate("/home");
         } catch (err) {
-            const message = err?.response?.data?.message ||
-            err?.message ||
-            "Network or server error.";
-            setError(message);
+          setError(err.message);
         } finally {
-            setLoading(false);
+          setLoading(false)
         }
     };
 

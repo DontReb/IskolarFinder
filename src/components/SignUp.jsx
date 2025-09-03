@@ -3,6 +3,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
+import { auth } from "../firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 
 const SignUp = memo(function Login() {
 
@@ -11,13 +13,22 @@ const SignUp = memo(function Login() {
     const [password, setPassword] = useState();
     const navigate = useNavigate();
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3001/signup', {name, email, password})
-        .then(result => {console.log(result)
-            navigate('/login');
-        })
-        .catch(err => console.log(err));
+        try {
+            const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+
+            const token = await userCredential.user.getIdToken();
+
+            await axios.post("http://localhost:3001/signup",
+                { name, email, firebaseUid: userCredential.user.uid },
+                { headers: { Authorization: `Bearer ${token}` } }
+            );
+
+            navigate("/login");
+        } catch (err) {
+            console.error(err.message);
+        }
     }
 
     return (
