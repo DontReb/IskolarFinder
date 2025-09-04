@@ -1,5 +1,6 @@
 .dash {
   justify-content: space-between;
+  align-items: center;
   display: flex;
   padding: 0 20px;
 }
@@ -26,7 +27,6 @@
 
 .authLinks {
   gap: 10px;
-  margin-top: 24px;
   margin-right: 50px;
 }
 
