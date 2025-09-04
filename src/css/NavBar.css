@@ -63,3 +63,52 @@
 .signUpbtn:hover {
   background-color: #1c4359;
 }
+
+.profileMenu {
+  position: relative;
+  display: inline-block;
+}
+
+.profileBtn {
+  background: none;
+  border: none;
+  font-family: "Sora";
+  font-size: 15px;
+  cursor: pointer;
+  color: #284B63;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 5px;
+  padding: 10px;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.dropdown p {
+  margin: 0;
+  padding: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.logoutbtn {
+  border: none;
+  background-color: #c0392b;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.logoutbtn:hover {
+  background-color: #e74c3c;
+}
